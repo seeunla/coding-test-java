@@ -1,4 +1,4 @@
-package routeforce;
+package bruteforce;
 import java.util.*;
 import java.lang.Math;
 
