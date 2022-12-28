@@ -62,9 +62,10 @@ public class fatigue {
         }
 
         for (int i = 0; i < dungeons.length; i++) {
-            //System.out.println("i :" + i);
-            //System.out.println("depth: " + depth);
-            //System.out.println("k :" + k);
+            System.out.println("i :" + i);
+            System.out.println("depth: " + depth);
+            System.out.println("k :" + k);
+            System.out.println("visited :" + visited);
             if (visited[i]) {
                 continue;
             }
