@@ -37,7 +37,7 @@ public class vowelsDictionary {
             answer++;
             // 주어진 문자열과 일치하는지 확인
             if (depth >= words.length -1 && Arrays.equals(words, result)) {
-                break;
+                return;
             }
             // 재귀
             dfs(depth+1, words, result);
