@@ -6,6 +6,7 @@ public class vowelsDictionary {
     private static int answer;
     private static String[] alphabet = {"A", "E", "I", "O", "U"}; // 모음
     private static String[] result;
+    public static boolean go = true;
 
 
     public static void main(String[] args) {
@@ -37,10 +38,14 @@ public class vowelsDictionary {
             answer++;
             // 주어진 문자열과 일치하는지 확인
             if (depth >= words.length -1 && Arrays.equals(words, result)) {
-                return;
+                go = false; // 해답을 찾으면 재귀를 멈춤
+                break;
             }
             // 재귀
             dfs(depth+1, words, result);
+            if (!go) { // 해답을 찾으면 재귀를 멈춤
+                return;
+            }
         }
     }
 
