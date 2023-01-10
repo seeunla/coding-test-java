@@ -1,7 +1,6 @@
 package bruteforce;
 
 import java.util.Arrays;
-
 public class vowelsDictionary {
     private static int answer;
     private static String[] alphabet = {"A", "E", "I", "O", "U"}; // 모음
